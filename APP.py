@@ -9,11 +9,11 @@ model_path = "stacking_classifier_model.pkl"
 stacking_regressor = joblib.load(model_path)
 
 # 设置页面配置和标题
-st.set_page_config(layout="wide", page_title="Stacking Classifier with SHAP for Model Interpretation ", page_icon="📊")
+st.set_page_config(layout="wide", page_title="Using a Stacking Classifier with SHAP for Model Interpretation to Predict Lymph Node Metastasis in LAGC after NAC", page_icon="📊")
 
-st.title("📊 Stacking Classifier with SHAP for Model Interpretation ")
+st.title("📊 Using a Stacking Classifier with SHAP for Model Interpretation to Predict Lymph Node Metastasis in LAGC after NAC")
 st.write("""
-Performing model predictions based on input feature values, and understanding the contribution of features to model predictions through SHAP analysis results.。
+Performing model predictions based on input feature values, and understanding the contribution of features to model predictions through SHAP analysis results.
 """)
 
 # 左侧侧边栏输入区域
