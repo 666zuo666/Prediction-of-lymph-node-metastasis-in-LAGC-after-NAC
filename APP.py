@@ -63,10 +63,10 @@ except FileNotFoundError:
 # 第二层元学习器 SHAP 可视化
 st.subheader("2. second-layer meta-learner")
 st.write("Feature contribution analysis of second-layer meta-learner.")
-meta_layer_img = "SHAP Contribution Analysis for the Meta-Learner in the Second Layer.png"
+meta_layer_img = "SHAP Contribution Analysis for the Meta-Learner in the Second Layer of Stacking Regressor.png"
 try:
     img2 = Image.open(meta_layer_img)
-    st.image(img2, caption="SHAP Contribution Analysis for the Meta-Learner in the Second Layer ", use_column_width=True)
+    st.image(img2, caption="SHAP Contribution Analysis for the Meta-Learner in the Second Layer of Stacking Regressor ", use_column_width=True)
 except FileNotFoundError:
     st.warning("error")
 
