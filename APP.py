@@ -22,9 +22,9 @@ st.sidebar.write("Features：")
 
 # 定义特征输入范围
 Radscore = st.sidebar.number_input( "Radscore:",min_value=-0.5, max_value=0.6, value=-0.251002483713187)
-Clinical_N_stage = st.selectbox("Clinical N stage:", options=[0, 1, 2, 3], format_func=lambda x: "N0" if x == 0 else ("N1" if x == 1 else ("N2" if x ==2 else "N3")))
-nNAC = st.selectbox("number lines of neoadjuvant chemotherapy:", options=[2, 3, 4], format_func=lambda x: "2" if x == 2 else ("3" if x == 3 else "4"))
-Clinical_T_stage = st.selectbox("Clinical T stage:", options=[0, 1, 2], format_func=lambda x: "T2-3" if x == 0 else ("T4a" if x == 1 else "T4b"))
+Clinical_N_stage = st.sidebar.selectbox("Clinical N stage:", options=[0, 1, 2, 3], format_func=lambda x: "N0" if x == 0 else ("N1" if x == 1 else ("N2" if x ==2 else "N3")))
+nNAC = st.sidebar.selectbox("number lines of neoadjuvant chemotherapy:", options=[2, 3, 4], format_func=lambda x: "2" if x == 2 else ("3" if x == 3 else "4"))
+Clinical_T_stage = st.sidebar.selectbox("Clinical T stage:", options=[0, 1, 2], format_func=lambda x: "T2-3" if x == 0 else ("T4a" if x == 1 else "T4b"))
 CA199 = st.sidebar.number_input( "CA199:",min_value=0.0, max_value=1200.0, value=2.1)
 # 添加预测按钮
 predict_button = st.sidebar.button("Predict")
