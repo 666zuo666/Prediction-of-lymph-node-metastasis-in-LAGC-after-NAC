@@ -34,7 +34,7 @@ if predict_button:
     st.header("Prediction result")
     try:
         # 将输入特征转换为模型所需格式
-        input_array = np.array(Radscore, Clinical_N_stage,nNAC,Clinical_T_stage, CA199).reshape(1, -1)
+        input_array = np.array([Radscore, Clinical_N_stage,nNAC,Clinical_T_stage, CA199]).reshape(1, -1)
 
         # 模型预测
         prediction = stacking_regressor.predict(input_array)[0]
