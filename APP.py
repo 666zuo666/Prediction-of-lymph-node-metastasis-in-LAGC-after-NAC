@@ -43,7 +43,8 @@ if predict_button:
         
 
         # 显示预测结果
-        st.success(f"Predict result：{prediction:.2f}")
+        # st.success(f"Predict result：{prediction:.2f}")
+        st.success(f"Predict result：{prediction[0]:.2f}")
     except Exception as e:
         st.error(f"error：{e}")
 
