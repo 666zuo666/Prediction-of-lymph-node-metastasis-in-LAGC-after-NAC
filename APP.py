@@ -37,7 +37,8 @@ if predict_button:
         input_array = np.array([Radscore, Clinical_N_stage,nNAC,Clinical_T_stage, CA199]).reshape(1, -1)
 
         # 模型预测
-        prediction = stacking_regressor.predict(input_array)[0]
+        # prediction = stacking_regressor.predict(input_array)[0]
+        prediction = stacking_regressor.predict_proba(input_array)[:, 1]
         
 
         # 显示预测结果
