@@ -38,7 +38,9 @@ if predict_button:
 
         # 模型预测
         # prediction = stacking_regressor.predict(input_array)[0]
-        prediction = stacking_regressor.predict_proba([input_array])
+        prediction = stacking_regressor.predict_proba(input_array)
+        print('-------------------------')
+        print(prediction)
         
 
         # 显示预测结果
